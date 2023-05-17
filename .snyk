@@ -8,3 +8,9 @@ patch:
         patched: '2023-05-16T15:12:18.180Z'
     - '@angular-devkit/build-angular > webpack-dev-server > portfinder > async > lodash':
         patched: '2023-05-16T15:12:18.180Z'
+    - ng2-charts > lodash:
+        patched: '2023-05-17T13:06:17.097Z'
+    - webpack-dev-server > portfinder > async > lodash:
+        patched: '2023-05-17T13:06:17.097Z'
+    - '@angular-devkit/build-angular > webpack-dev-server > portfinder > async > lodash':
+        patched: '2023-05-17T13:06:17.097Z'
