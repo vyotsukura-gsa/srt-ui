@@ -91,7 +91,9 @@ source ~/.bashrc
 ```
 ### Install Yarn 
 Execute the following command to install yarn: 
-    npm install –global yarn 
+```
+npm install –global yarn
+```
 ## Running and Configuration 
 * Run `ng serve` to start the client. 
 * Then open a browser to this URL: <http://localhost:4200/>. 
