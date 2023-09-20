@@ -1,7 +1,8 @@
 # Overview 
-The SRT UI is a Javascript web application built using Angular (v. 15) which along with the SRT API deliver the [Solicitation Review Tool](https://srt.app.cloud.gov/auth) for viewing Section 508 compliance predictions for Information and Communication Technology (ICT) solicitations submitted from agencies around the federal government. For development and testing purposes, a total of three instances of this client application run on cloud.gov - development, staging and production. 
+The SRT UI is a Javascript web application built using Angular (v. 15) which along with the [SRT-API](https://github.com/GSA/srt-api) deliver the [Solicitation Review Tool](https://srt.app.cloud.gov/auth) for viewing Section 508 compliance predictions for Information and Communication Technology (ICT) solicitations submitted from agencies around the federal government. To facilitate development and testing in addition to production deployment, a total of three instances of this client application run on cloud.gov - development, staging and production. 
 
-SRT UI is now deployed to cloud.gov using a Docker image and security updates for all Node modules and software components are managed with yarn and SNYK. 
+SRT UI is now deployed to cloud.gov using a Docker image and security updates for all Node modules and software components are managed with yarn and SNYK. This application accesses ICT solicitation data that is housed in a PostgreSQL database on cloud.gov and is updated on a daily basis through a cron job that runs the [SRT FBO Scraper](https://github.com/GSA/srt-fbo-scraper) to pull all of the latest solicitations from SAM.GOV. 
+
 # Developer Requirements 
 ## Software Components and Tools 
 The following is a summary of the software and tools that are needed for development of this project: 
