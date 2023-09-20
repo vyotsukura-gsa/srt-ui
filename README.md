@@ -22,8 +22,6 @@ Access to the following platforms will also be required for development:
 * Docker 
 * SNYK 
 * GitHub - GSA team 
-## Environment Variables 
-* 
 # Setup and Deployment  
 ## Getting Started
 ### Download SRT Source Code 
