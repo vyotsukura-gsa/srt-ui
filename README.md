@@ -1,5 +1,7 @@
 # Overview 
-The SRT UI is a Javascript web application built using Angular (v. 15) which along with the SRT API deliver the web portal called the [Solicitation Review Tool](https://srt.app.cloud.gov/auth) for viewing Section 508 compliance predictions for Information and Communication Technology (ICT) solicitations submitted from agencies around the federal government. For development and testing purposes, a total of three instances of this client application run on cloud.gov - development, staging and production. 
+The SRT UI is a Javascript web application built using Angular (v. 15) which along with the SRT API deliver the [Solicitation Review Tool](https://srt.app.cloud.gov/auth) for viewing Section 508 compliance predictions for Information and Communication Technology (ICT) solicitations submitted from agencies around the federal government. For development and testing purposes, a total of three instances of this client application run on cloud.gov - development, staging and production. 
+
+SRT UI is now deployed to cloud.gov using a Docker image and security updates for all Node modules and software components are managed with yarn and SNYK. 
 # Developer Requirements 
 ## Software Components and Tools 
 The following is a summary of the software and tools that are needed for development of this project: 
@@ -39,7 +41,7 @@ npm install -g @angular/cli@latest
 ```
 For more detailed instructions on setting up your local environment with Angular, go here: <https://angular.io/guide/setup-local>. 
 ### Install Docker
-Install the Docker engine for various platforms by referring to the documentation here: [https://docs.docker.com/engine/install/] 
+Install the Docker engine for various platforms by referring to the documentation here: <https://docs.docker.com/engine/install/> 
 ### Install PostgreSQL
 Mac:
 ```
