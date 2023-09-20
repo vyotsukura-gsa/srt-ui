@@ -29,9 +29,9 @@ Access to the following platforms will also be required for development:
 ## Installation 
 ### Angular Installation and Setup
 The following command will install the Angular CLI globally: 
-    npm install -g @angular/cli
+    `npm install -g @angular/cli`
 To update the CLI: 
-    npm install -g @angular/cli@latest 
+    `npm install -g @angular/cli@latest` 
 ### Install Docker
 Install the Docker engine for various platforms by referring to the documentation here: [https://docs.docker.com/engine/install/] 
 ### Install PostgreSQL
