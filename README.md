@@ -40,7 +40,7 @@ Ubuntu:
 sudo apt-get install -y nodejs npm
 sudo npm install npm@latest -g
 ```
-### Angular Installation and Setup
+### Install Angular  
 The following command will install the Angular CLI globally: 
 ```
 npm install -g @angular/cli
