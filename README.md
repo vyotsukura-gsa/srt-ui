@@ -60,7 +60,7 @@ npm install snyk -g
 echo "Authenticating snyk..."
 snyk auth
 ```
-## Install Node Package Manager (npm)
+### Install Node Package Manager (npm)
 Mac:
 ```
 brew install npm
