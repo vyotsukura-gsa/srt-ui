@@ -33,7 +33,7 @@ The following command will install the Angular CLI globally:
 npm install -g @angular/cli
 ```
 
-To update the CLI: 
+To update the CLI to the latest version: 
 ```
 npm install -g @angular/cli@latest 
 ```
