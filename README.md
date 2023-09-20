@@ -26,15 +26,7 @@ Access to the following platforms will also be required for development:
 * 
 # Setup and Deployment  
 ## Getting Started
-### Download SRT Source Code 
-For both Mac and Ubuntu: 
-* Navigate to the desired folder to clone the srt-ui project. 
-* Then execute the following in the command line: 
-```
-git clone https://github.com/GSA/srt-ui.git
-cd srt-ui
-git checkout dev
-```
+
 ## Installation 
 ### Install Node Package Manager (npm)
 Mac:
@@ -109,7 +101,15 @@ Alternatively, you can install yarn on Mac OS with the following command:
 brew install yarn
 ```
 For more information on installing yarn, refer to the detailed information here: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
-
+### Download SRT Source Code 
+For both Mac and Ubuntu: 
+* Navigate to the desired folder to clone the srt-ui project. 
+* Then execute the following in the command line: 
+```
+git clone https://github.com/GSA/srt-ui.git
+cd srt-ui
+git checkout dev
+```
 ## Running the Project 
 * Run `ng serve` to start the SRT client locally. 
 * Then open a browser to this URL: <http://localhost:4200/>. 
