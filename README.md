@@ -37,6 +37,7 @@ To update the CLI to the latest version:
 ```
 npm install -g @angular/cli@latest 
 ```
+For more detailed instructions on setting up your local environment with Angular, go here: <https://angular.io/guide/setup-local>. 
 ### Install Docker
 Install the Docker engine for various platforms by referring to the documentation here: [https://docs.docker.com/engine/install/] 
 ### Install PostgreSQL
