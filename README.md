@@ -101,7 +101,7 @@ Alternatively, you can install yarn on Mac OS with the following command:
 ```
 brew install yarn
 ```
-For more information, refer to the detailed information here: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
+For more information on installing yarn, refer to the detailed information here: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
 
 ## Running the Project 
 * Run `ng serve` to start the SRT client locally. 
