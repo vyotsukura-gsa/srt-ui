@@ -29,6 +29,16 @@ Access to the following platforms will also be required for development:
 * Open Terminal or use Visual Studio Code and open a terminal window. 
 * Navigate to the desired folder and clone the project. 
 ## Installation 
+### Install Node Package Manager (npm)
+Mac:
+```
+brew install npm
+```
+Ubuntu:
+```
+sudo apt-get install -y nodejs npm
+sudo npm install npm@latest -g
+```
 ### Angular Installation and Setup
 The following command will install the Angular CLI globally: 
 ```
@@ -62,16 +72,6 @@ npm install snyk -g
 
 echo "Authenticating snyk..."
 snyk auth
-```
-### Install Node Package Manager (npm)
-Mac:
-```
-brew install npm
-```
-Ubuntu:
-```
-sudo apt-get install -y nodejs npm
-sudo npm install npm@latest -g
 ```
 ### Install Node Version Manager (nvm)
 Mac:
