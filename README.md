@@ -94,8 +94,14 @@ Execute the following command to install yarn:
 ```
 npm install –global yarn
 ```
+Alternatively, you can install yarn on Mac OS with the following command: 
+```
+brew install yarn
+```
+For more information, refer to the detailed information here: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
+
 ## Running the Project 
-* Run `ng serve` to start the client. 
+* Run `ng serve` to start the SRT client locally. 
 * Then open a browser to this URL: <http://localhost:4200/>. 
 * Run `ng build` to build the project. 
 ## Deployment 
