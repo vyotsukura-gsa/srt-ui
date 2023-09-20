@@ -26,9 +26,16 @@ Access to the following platforms will also be required for development:
 * 
 # Setup and Deployment  
 ## Getting Started
-* To get started with SRT-UI, go to [GSA/srt-ui](https://github.com/GSA/srt-ui) to copy the URL for cloning the project. 
-* Open Terminal or use Visual Studio Code and open a terminal window. 
-* Navigate to the desired folder and clone the project. 
+### Download SRT Source Code 
+For both Mac and Ubuntu: 
+* Navigate to the desired folder to clone the srt-ui project. 
+* Then execute the following in the command line: 
+```
+git clone https://github.com/GSA/srt-ui.git
+cd srt-ui
+git checkout dev
+npm install
+```
 ## Installation 
 ### Install Node Package Manager (npm)
 Mac:
