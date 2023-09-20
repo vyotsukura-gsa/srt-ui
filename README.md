@@ -34,7 +34,6 @@ For both Mac and Ubuntu:
 git clone https://github.com/GSA/srt-ui.git
 cd srt-ui
 git checkout dev
-npm install
 ```
 ## Installation 
 ### Install Node Package Manager (npm)
