@@ -94,7 +94,7 @@ Execute the following command to install yarn:
 ```
 npm install –global yarn
 ```
-## Running and Configuration 
+## Running the Project 
 * Run `ng serve` to start the client. 
 * Then open a browser to this URL: <http://localhost:4200/>. 
 * Run `ng build` to build the project. 
