@@ -98,7 +98,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source ~/.bashrc
 ```
 ### Install Yarn 
-For the most up-to-date information on installing yarn on your system, go to this website: <https://yarnpkg.com/getting-started/install>
+For the most up-to-date information on installing yarn on your system, go to this website: <https://yarnpkg.com/getting-started/install>.
 npm is no longer the recommended way to install yarn. 
 
 ## Running the Project 
