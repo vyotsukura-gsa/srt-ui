@@ -99,36 +99,49 @@ source ~/.bashrc
 ```
 ### Install Yarn 
 For the most up-to-date information on installing yarn on your system, go to this website: <https://yarnpkg.com/getting-started/install>.
-npm is no longer the recommended way to install yarn. 
+
+Note: npm is no longer the recommended way to install yarn. 
 
 ## Running the Project 
 * Run `ng serve` to start the SRT client locally. 
 * Then open a browser to this URL: <http://localhost:4200/>. 
 * Run `ng build` to build the project. 
 ## Deployment 
-### Docker Build 
-First we need to build the docker image for the srt-ui, and the process for dev/staging is slightly different than production:
-#### Staging/Dev
+### Build the Docker Image
+####  Development 
 ```
-docker build . -t <docker_username>/srt-ui:<release_version>-<dev/staging> --build-arg SNYK_TOKEN=<SNYK_TOKEN>
+docker build . -t <docker_username>/srt-ui:<release_version>-dev --build-arg environment=dev 
 ```
-#### Production
+####  Staging 
 ```
-docker build . -t <docker_username>/srt-ui:<release_version>-prod --build-arg SNYK_TOKEN=<SNYK_TOKEN> --build-arg environment=production
+docker build . -t <docker_username>/srt-ui:<release_version>-staging --build-arg environment=staging 
 ```
-**SNYK_TOKEN** is the AUTH Token provided by [snyk](https://app.snyk.io/) to authorize its use. If you need help finding the AUTH token, utilize this [documentation](https://docs.snyk.io/enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token) 
+#### Production 
+docker build . -t <docker_username>/srt-ui:<release_version>-prod --build-arg environment=prod 
 
-
-### Docker Push
-This will push the built image to the docker hub user indicated in <docker_username>
+### Push to Docker  
+####  Development 
 ```
-docker push <docker_username>/srt-ui:<release_version>-<env>
+sudo docker push <docker_username>/srt-ui:<release_version>-dev 
 ```
-
-### CF Push
-Finally to deploy to cloud.gov, we need to utilize the cf cli to push the docker image app into the cloud.gov application droplet.
+####  Staging 
 ```
-cf target -s <env>
-cf push srt-ui-<env> -f cf/manifest.<env>.yml --docker-image <docker_username>/srt-ui:<release_version>-<env>
+sudo docker push <docker_username>/srt-ui:<release_version>-staging 
 ```
-
+#### Production 
+```
+sudo docker push <docker_username>/srt-ui:<release_version>-prod 
+```
+### Deploy to Cloud.gov
+####  Development 
+```
+cf push srt-ui-dev -f cf/manifest.dev.yml --docker-image <docker_username>/srt-ui:<release_version>-dev
+```
+####  Staging 
+```
+cf push srt-ui-staging -f cf/manifest.staging.yml --docker-image <docker_username>/srt-ui:<release_version>-staging
+```
+#### Production 
+```
+cf push srt-ui-prod -f cf/manifest.prod.yml --docker-image <docker_username>/srt-ui:<release_version>-prod
+```
