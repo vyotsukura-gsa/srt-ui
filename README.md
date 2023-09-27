@@ -26,8 +26,8 @@ Access to the following platforms will also be required for development:
 ## Getting Started
 ### Download SRT Source Code 
 For both Mac and Ubuntu: 
-* Navigate to the desired folder to clone the srt-ui project. 
-* Then execute the following in the command line: 
+* In the command line, navigate to the desired folder to clone the srt-ui project. 
+* Then execute the following command: 
 ```
 git clone https://github.com/GSA/srt-ui.git
 cd srt-ui
@@ -113,3 +113,28 @@ For more information on installing yarn, refer to the detailed information here:
 * Then open a browser to this URL: <http://localhost:4200/>. 
 * Run `ng build` to build the project. 
 ## Deployment 
+### Docker Build 
+First we need to build the docker image for the srt-ui, and the process for dev/staging is slightly different than production:
+#### Staging/Dev
+```
+docker build . -t <docker_username>/srt-ui:<release_version>-<dev/staging> --build-arg SNYK_TOKEN=<SNYK_TOKEN>
+```
+#### Production
+```
+docker build . -t <docker_username>/srt-ui:<release_version>-prod --build-arg SNYK_TOKEN=<SNYK_TOKEN> --build-arg environment=production
+```
+**SNYK_TOKEN** is the AUTH Token provided by [snyk](https://app.snyk.io/) to authorize its use. If you need help finding the AUTH token, utilize this [documentation](https://docs.snyk.io/enterprise-setup/snyk-broker/snyk-broker-code-agent/setting-up-the-code-agent-broker-client-deployment/step-1-obtaining-the-required-tokens-for-the-setup-procedure/obtaining-your-snyk-api-token) 
+
+
+### Docker Push
+This will push the built image to the docker hub user indicated in <docker_username>
+```
+docker push <docker_username>/srt-ui:<release_version>-<env>
+```
+
+### CF Push
+Finally to deploy to cloud.gov, we need to utilize the cf cli to push the docker image app into the cloud.gov application droplet.
+```
+cf target -s <env>
+cf push srt-ui-<env> -f cf/manifest.<env>.yml --docker-image <docker_username>/srt-ui:<release_version>-<env>
+```
