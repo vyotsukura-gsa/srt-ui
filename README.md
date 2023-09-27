@@ -117,8 +117,9 @@ docker build . -t <docker_username>/srt-ui:<release_version>-dev --build-arg env
 docker build . -t <docker_username>/srt-ui:<release_version>-staging --build-arg environment=staging 
 ```
 #### Production 
+```
 docker build . -t <docker_username>/srt-ui:<release_version>-prod --build-arg environment=prod 
-
+```
 ### Push to Docker  
 ####  Development 
 ```
@@ -145,3 +146,10 @@ cf push srt-ui-staging -f cf/manifest.staging.yml --docker-image <docker_usernam
 ```
 cf push srt-ui-prod -f cf/manifest.prod.yml --docker-image <docker_username>/srt-ui:<release_version>-prod
 ```
+
+
+
+
+
+
+
