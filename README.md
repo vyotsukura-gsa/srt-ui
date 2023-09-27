@@ -98,15 +98,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source ~/.bashrc
 ```
 ### Install Yarn 
-Execute the following command to install yarn: 
-```
-npm install –global yarn
-```
-Alternatively, you can install yarn on Mac OS with the following command: 
-```
-brew install yarn
-```
-For more information on installing yarn, refer to the detailed information here: <https://classic.yarnpkg.com/en/docs/install#mac-stable>
+For the most up-to-date information on installing yarn on your system, go to this website: <https://yarnpkg.com/getting-started/install>
+npm is no longer the recommended way to install yarn. 
 
 ## Running the Project 
 * Run `ng serve` to start the SRT client locally. 
@@ -138,3 +131,4 @@ Finally to deploy to cloud.gov, we need to utilize the cf cli to push the docker
 cf target -s <env>
 cf push srt-ui-<env> -f cf/manifest.<env>.yml --docker-image <docker_username>/srt-ui:<release_version>-<env>
 ```
+
