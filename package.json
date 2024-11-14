@@ -63,7 +63,7 @@
     "url-search-params-polyfill": "^7.0.0",
     "uswds": "^2.12.2",
     "web-animations-js": "^2.3.2",
-    "webpack-dev-server": "^4.7.3",
+    "webpack-dev-server": "^5.1.0",
     "zone.js": "~0.9.1",
     "@snyk/protect": "latest"
   },
